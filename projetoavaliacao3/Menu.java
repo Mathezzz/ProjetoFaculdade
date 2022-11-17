@@ -63,7 +63,10 @@ public class Menu {
         criacaoProje = scan.nextLine();
 
         idProje = proximo();
-        Projeto xx = new Projeto(idProje, nomeProje, descricaoProje, criacaoProje);
+        //****************************************************
+        //Este objeto xx precisa ser substituído sempre por um novo nome de objeto
+        //Que vem do método proximo()
+        //Projeto xx = new Projeto(idProje, nomeProje, descricaoProje, criacaoProje);
     }
 
     //Função que incrementa o id e retorna Projeto+id
