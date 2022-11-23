@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Menu {
 
     int id = 0;
-
+    
     public static void menu() {
         int opcao;
         Scanner scan = new Scanner(System.in);
@@ -26,12 +26,14 @@ public class Menu {
         switch (opcao) {
             case 1:
                 //Chamar lista de Projetos
+                //Percorrer lista encadeada
                 break;
             case 2:
                 //Chamar lista de tarefas
                 break;
             case 3:
                 //Adicionar Projeto
+                addProjeto();
                 break;
             case 4:
                 //Adicionar tarefa
@@ -46,7 +48,7 @@ public class Menu {
     }
 
     //Método para criar Projeto novo (Case 3):
-    public void addProjeto() {
+    public static void addProjeto() {
         String idProje;
         String nomeProje;
         String descricaoProje;
@@ -62,17 +64,14 @@ public class Menu {
         System.out.println("Digite a data atual:");
         criacaoProje = scan.nextLine();
 
-        idProje = proximo();
+        
         //****************************************************
         //Este objeto xx precisa ser substituído sempre por um novo nome de objeto
         //Que vem do método proximo()
-        //Projeto xx = new Projeto(idProje, nomeProje, descricaoProje, criacaoProje);
+        
     }
 
-    //Função que incrementa o id e retorna Projeto+id
-    public String proximo() {
-        String next;
-        next = "Projeto"+id;
-        return next;
-    }
+    
+    
+    
 }
